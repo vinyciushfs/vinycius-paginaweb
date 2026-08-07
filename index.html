@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <header {
+    width: 100vw;               /* Força o header a ocupar 100% da largura da tela */
+    margin-left: calc(-50vw + 50%); /* Remove margens laterais automáticas do tema */
+    
+    display: flex;              /* Ativa o modo Flexbox */
+    justify-content: center;    /* Centraliza o texto horizontalmente */
+    align-items: center;        /* Centraliza o texto verticalmente */
+    text-align: center;         /* Garante o alinhamento do texto */
+    
+    padding: 20px 0;            /* Ajuste o espaço interno (topo e base) como preferir */
+    box-sizing: border-box;     /* Garante que o padding não quebre a largura da tela */
+}
+
     <style>
-        body {
+        header {
             background-color: #1F4812;
         }
     </style>
