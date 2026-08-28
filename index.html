@@ -3,79 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <style>
-     header {
-    width: 100vw;            
-    margin-left: calc(-50vw + 50%); 
-    display: flex;            
-    flex-direction: column;
-    justify-content: center;    
-    align-items: center;        
-    text-align: center;      
-    padding: 20px 0;            
-    box-sizing: border-box;   
-    background-color: #1F4812;
-    color: #ffffff;
-}
- </style>
+    <title>O Boleiro - Blog de Futebol</title>
+    <style>
+        /* Estilos Gerais do Site */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f4; /* Fundo cinza bem claro com toque verde para descansar os olhos */
+            color: #1a3015; /* Texto em verde escuro quase preto para contraste máximo */
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho Todo em Verde Escuro */
+        header {
+            width: 100%;            
+            display: flex;            
+            flex-direction: column;
+            justify-content: center;    
+            align-items: center;        
+            text-align: center;      
+            padding: 40px 20px;            
+            box-sizing: border-box;   
+            background-color: #1a4314; /* Verde floresta escuro */
+            color: #ffffff; /* Texto branco para contraste perfeito */
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #a3e299; /* Verde claro pro subtítulo se destacar no fundo escuro */
+        }
+
+        /* Centralizador do Conteúdo Principal */
+        main {
+            max-width: 800px; /* Largura ideal para leitura de posts */
+            margin: 40px auto; /* Centraliza o bloco na tela e dá espaço nas bordas */
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilização dos Textos e Títulos */
+        h2 {
+            color: #1a4314; /* Títulos principais no verde do tema */
+            font-size: 1.8rem;
+            margin-top: 40px;
+            border-bottom: 2px solid #cbdccb; /* Linha sutil verde abaixo dos títulos */
+            padding-bottom: 8px;
+        }
+
+        h3, h4 {
+            color: #265c1e; /* Subtítulos em um verde um pouco mais aberto */
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify; /* Alinha o texto bonitinho nas duas laterais */
+        }
+
+        /* Separador Visual */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #cbdccb;
+            margin: 40px 0;
+        }
+
+        /* Lista de Destaques */
+        ul {
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* Ajuste Prático para Imagens */
+        .post-img {
+            max-height: 40vh; 
+            max-width: 80%; /* Aumentei um pouco para ficar melhor em celulares */
+            display: block; 
+            margin: 20px auto;
+            border-radius: 8px; /* Bordas arredondadas para dar um visual moderno */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra leve na foto */
+        }
+    </style>
 </head>
 <body>
+
     <header>
-    <h1>O Boleiro</h1>
-    <p>Vou compartilhar conhecimentos sobre futebol</p>
+        <h1>O Boleiro</h1>
+        <p>Vou compartilhar conhecimentos sobre futebol</p>
     </header>
+
     <main>
-        <h2>Johan Cruyff: o gênio que desenhou o futebol moderno</h2>
-        <p>Por:Vinycius</p>
-        <p>Há jogadores que entram para a história pelos títulos. Outros, pelos gols. Johan Cruyff fez mais do que isso: mudou a maneira como o futebol é pensado. Seu legado vai muito além do que conquistou dentro de campo. As ideias que defendia como jogador e treinador ajudaram a moldar o futebol moderno e continuam presentes nas maiores equipes do mundo.
+        <!-- POST 1: CRUYFF -->
+        <article>
+            <h2>Johan Cruyff: o gênio que desenhou o futebol moderno</h2>
+            <p><strong>Por:</strong> Vinycius</p>
+            <p>Há jogadores que entram para a história pelos títulos. Outros, pelos gols. Johan Cruyff fez mais do que isso: mudou a maneira como o futebol é pensado. Seu legado vai muito além do que conquistou dentro de campo. As ideias que defendia como jogador e treinador ajudaram a moldar o futebol moderno e continuam presentes nas maiores equipes do mundo.</p>
 
-Na década de 1970, Cruyff foi o principal rosto do Futebol Total, filosofia desenvolvida pelo Ajax e aperfeiçoada pela seleção holandesa. O conceito parecia simples, mas revolucionário: qualquer jogador poderia ocupar qualquer posição, desde que outro cobrisse o espaço deixado. Em vez de um time estático, surgia uma equipe dinâmica, em constante movimentação, onde inteligência tática era tão importante quanto habilidade com a bola.
+            <p>Na década de 1970, Cruyff foi o principal rosto do Futebol Total, filosofia desenvolvida pelo Ajax e aperfeiçoada pela seleção holandesa. O conceito parecia simples, mas revolucionário: qualquer jogador poderia ocupar qualquer posição, desde que outro cobrisse o espaço deixado. Em vez de um time estático, surgia uma equipe dinâmica, em constante movimentação, onde inteligência tática era tão importante quanto habilidade com a bola.</p>
 
-Dentro de campo, Cruyff era o jogador ideal para colocar essa ideia em prática. Dono de uma técnica refinada, visão de jogo impressionante e enorme capacidade de liderança, ele fazia o time funcionar como uma engrenagem. Não era apenas um atacante ou um armador; era o cérebro da equipe. Sua famosa jogada, conhecida como "Cruyff Turn", tornou-se um dos dribles mais icônicos da história do futebol e simboliza sua criatividade.
+            <p>Dentro de campo, Cruyff era o jogador ideal para colocar essa ideia em prática. Dono de uma técnica refinada, visão de jogo impressionante e enorme capacidade de liderança, ele fazia o time funcionar como uma engrenagem. Não era apenas um atacante ou um armador; era o cérebro da equipe. Sua famosa jogada, conhecida como "Cruyff Turn", tornou-se um dos dribles mais icônicos da história do futebol e simboliza sua criatividade.</p>
 
-Mas foi como treinador que seu impacto se tornou ainda maior. No Barcelona, Cruyff implantou um modelo baseado na posse de bola, na ocupação inteligente dos espaços e na construção das jogadas desde a defesa. Seu chamado "Dream Team" conquistou títulos importantes e estabeleceu uma identidade que o clube mantém até hoje.
+            <p>Mas foi como treinador que seu impacto se tornou ainda maior. No Barcelona, Cruyff implantou um modelo baseado na posse de bola, na ocupação inteligente dos espaços e na construção das jogadas desde a defesa. Seu chamado "Dream Team" conquistou títulos importantes e estabeleceu uma identidade que o clube mantém até hoje.</p>
 
-Essa filosofia também transformou a formação de jogadores na base. Em vez de priorizar apenas força física ou velocidade, o foco passou a ser atletas capazes de pensar o jogo, tomar decisões rápidas e atuar em diferentes funções. Dessa escola surgiram jogadores como Xavi Hernández, Andrés Iniesta e Lionel Messi, que cresceram em um ambiente fortemente influenciado pelas ideias de Cruyff.
+            <p>Essa filosofia também transformou a formação de jogadores na base. Em vez de priorizar apenas força física ou velocidade, o foco passou a ser atletas capazes de pensar o jogo, tomar decisões rápidas e atuar em diferentes funções. Dessa escola surgiram jogadores como Xavi Hernández, Andrés Iniesta e Lionel Messi, que cresceram em um ambiente fortemente influenciado pelas ideias de Cruyff.</p>
 
-O impacto de sua filosofia ultrapassou o Barcelona. Pep Guardiola, um de seus discípulos mais famosos, levou esses conceitos ao auge no próprio Barcelona, no Bayern de Munique e no Manchester City, com o famoso "Tiki Taka", estilo de jogo efetivo que o time tem grande troca de passes, com o mínimo de toques possíveis, dificultando a perda da posse de bola, que é essencial em seu sistema. Hoje, equipes de diferentes países utilizam princípios como pressão alta, posse de bola, movimentação constante e troca de posições — todos elementos que têm suas raízes no trabalho de Cruyff.
+            <p>O impacto de sua filosofia ultrapassou o Barcelona. Pep Guardiola, um de seus discípulos mais famosos, levou esses conceitos ao auge no próprio Barcelona, no Bayern de Munique e no Manchester City, com o famoso "Tiki Taka", estilo de jogo efetivo que o time tem grande troca de passes, com o mínimo de toques possíveis, dificultando a perda da posse de bola, que é essencial em seu sistema. Hoje, equipes de diferentes países utilizam princípios como pressão alta, posse de bola, movimentação constante e troca de posições — todos elementos que têm suas raízes no trabalho de Cruyff.</p>
 
-É claro que o futebol evoluiu por influência de muitos treinadores e jogadores ao longo das décadas. No entanto, poucos tiveram um impacto tão profundo quanto Johan Cruyff. Ele mostrou que vencer era importante, mas que a forma de jogar também poderia transformar o esporte. Seu legado permanece vivo em cada equipe que valoriza o jogo coletivo, a inteligência tática e o protagonismo com a bola nos pés.
+            <p>É claro que o futebol evoluiu por influência de muitos treinadores e jogadores ao longo das décadas. No entanto, poucos tiveram um impacto tão profundo quanto Johan Cruyff. Ele mostrou que vencer era importante, mas que a forma de jogar também poderia transformar o esporte. Seu legado permanece vivo em cada equipe que valoriza o jogo coletivo, a inteligência tática e o protagonismo com a bola nos pés.</p>
 
-Mais do que um craque, Johan Cruyff foi um visionário. E, para muitos, o futebol moderno começou quando ele decidiu que o jogo poderia ser muito mais do que onze jogadores ocupando posições fixas: poderia ser um espetáculo de ideias em movimento.</p>
-   <img src="cruyffaura.jpg" <img src="foto.png" style="max-height: 40vh; max-width: 30%; display: block; margin: 0 auto;">
+            <p>Mais do que um craque, Johan Cruyff foi um visionário. E, para muitos, o futebol moderno começou quando ele decidiu que o jogo poderia ser muito mais do que onze jogadores ocupando posições fixas: poderia ser um espetáculo de ideias em movimento.</p>
+            
+            <!-- Correção da tag de imagem antiga -->
+            <img src="foto.png" alt="Foto do Johan Cruyff" class="post-img">
+        </article>
 
-    </main>
-    <h2>Como Manuel Neuer mudou para sempre a forma de jogar como goleiro</h2>
-    <p>Por:Vinycius</p>
-    <p>Durante décadas, o papel do goleiro era simples: defender chutes, sair em cruzamentos e organizar a defesa. Poucos imaginavam que um jogador dessa posição pudesse revolucionar o futebol moderno. Mas foi exatamente isso que Manuel Neuer fez.
+        <hr>
 
-O goleiro alemão, revelado pelo Schalke 04 e consagrado no Bayern de Munique e na seleção da Alemanha, transformou completamente a maneira como os goleiros participam de uma partida. Seu estilo inovador fez surgir o conceito de "goleiro-líbero", função que hoje influencia jogadores do mundo inteiro.
+        <!-- POST 2: NEUER -->
+        <article>
+            <h2>Como Manuel Neuer mudou para sempre a forma de jogar como goleiro</h2>
+            <p><strong>Por:</strong> Vinycius</p>
+            <p>Durante décadas, o papel do goleiro era simples: defender chutes, sair em cruzamentos e organizar a defesa. Poucos imaginavam que um jogador dessa posição pudesse revolucionar o futebol moderno. Mas foi exatamente isso que Manuel Neuer fez.</p>
 
-<h3>O que é um goleiro-líbero?</h3>
-Antes de Neuer, era comum que os goleiros permanecessem próximos da linha do gol, saindo apenas quando fosse realmente necessário. Neuer mudou essa lógica. Com excelente leitura de jogo, velocidade e qualidade com os pés, ele passou a atuar muitos metros fora da área, interceptando lançamentos antes mesmo que os atacantes chegassem à bola.
+            <p>O goleiro alemão, revelado pelo Schalke 04 e consagrado no Bayern de Munique e na seleção da Alemanha, transformou completamente a maneira como os goleiros participam de uma partida. Seu estilo inovador fez surgir o conceito de "goleiro-líbero", função que hoje influência jogadores do mundo inteiro.</p>
 
-Na prática, ele funcionava como um zagueiro extra, ajudando sua equipe a manter a posse de bola e permitindo que a defesa jogasse mais avançada.
+            <h3>O que é um goleiro-líbero?</h3>
+            <p>Antes de Neuer, era comum que os goleiros permanecessem próximos da linha do gol, saindo apenas quando fosse realmente necessário. Neuer mudou essa lógica. Com excelente leitura de jogo, velocidade e qualidade com os pés, ele passou a atuar muitos metros fora da área, interceptando lançamentos antes mesmo que os atacantes chegassem à bola.</p>
+            <p>Na prática, ele funcionava como um zagueiro extra, ajudando sua equipe a manter a posse de bola e permitindo que a defesa jogasse mais avançada.</p>
 
-<h3>A Copa do Mundo de 2014</h3>
-A atuação que consolidou esse estilo aconteceu na Copa do Mundo de 2014, especialmente na vitória da Alemanha sobre a Argélia, nas oitavas de final. Durante a partida, Neuer saiu diversas vezes da área para cortar bolas perigosas, impedindo contra-ataques e demonstrando uma confiança incomum para um goleiro.
+            <h3>A Copa do Mundo de 2014</h3>
+            <p>A atuação que consolidou esse estilo aconteceu na Copa do Mundo de 2014, especialmente na vitória da Alemanha sobre a Argélia, nas oitavas de final. Durante a partida, Neuer saiu diversas vezes da área para cortar bolas perigosas, impedindo contra-ataques e demonstrando uma confiança incomum para um goleiro.</p>
+            <p>A Alemanha conquistou o título mundial naquele ano, e as atuações de Neuer foram fundamentais para o sucesso da equipe.</p>
 
-A Alemanha conquistou o título mundial naquele ano, e as atuações de Neuer foram fundamentais para o sucesso da equipe.
+            <h3>O impacto no futebol moderno</h3>
+            <p>Após o sucesso de Neuer, treinadores passaram a exigir que os goleiros fossem muito mais do que apenas defensores do gol. Hoje, é comum que goleiros participem da construção das jogadas, realizem passes precisos e ajudem a equipe na saída de bola.</p>
+            <p>Grandes nomes da atualidade, como Alisson Becker, Ederson Moraes, Gianluigi Donnarumma e Mike Maignan, também utilizam características semelhantes, mostrando como a influência de Neuer ultrapassou gerações.</p>
 
-<h3>O impacto no futebol moderno</h3>
-Após o sucesso de Neuer, treinadores passaram a exigir que os goleiros fossem muito mais do que apenas defensores do gol. Hoje, é comum que goleiros participem da construção das jogadas, realizem passes precisos e ajudem a equipe na saída de bola.
+            <h3>Um legado que permanece</h3>
+            <p>Mesmo após enfrentar lesões ao longo da carreira, Manuel Neuer continua sendo considerado um dos maiores goleiros da história. Sua coragem, inteligência tática e habilidade com os pés mudaram a forma como o futebol enxerga essa posição.</p>
+            <p>Hoje, quando um goleiro participa da troca de passes ou sai da área para impedir um ataque antes que ele aconteça, é impossível não lembrar da revolução iniciada por Manuel Neuer. Seu legado vai muito além de títulos e defesas espetaculares: ele redefiniu o papel do goleiro no futebol moderno.</p>
+        </article>
 
-Grandes nomes da atualidade, como Alisson Becker, Ederson Moraes, Gianluigi Donnarumma e Mike Maignan, também utilizam características semelhantes, mostrando como a influência de Neuer ultrapassou gerações.
+        <hr>
 
-Um legado que permanece
-Mesmo após enfrentar lesões ao longo da carreira, Manuel Neuer continua sendo considerado um dos maiores goleiros da história. Sua coragem, inteligência tática e habilidade com os pés mudaram a forma como o futebol enxerga essa posição.
 
-Hoje, quando um goleiro participa da troca de passes ou sai da área para impedir um ataque antes que ele aconteça, é impossível não lembrar da revolução iniciada por Manuel Neuer. Seu legado vai muito além de títulos e defesas espetaculares: ele redefiniu o papel do goleiro no futebol moderno.</p>
-  </body>
-</html>
-    <title>A Ditadura da Perfeição: Como Cristiano Ronaldo e Messi Revolucionaram o Futebol</title>
-</head>
-<body>
 
     <article>
         <h2>A Ditadura da Perfeição: Como Cristiano Ronaldo e Messi Destruíram o Futebol Antigo e Criaram uma Nova Era</h2>
